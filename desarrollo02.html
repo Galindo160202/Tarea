@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo 02</title>
+</head>
+<body>
+    <h1>Ejercicio 02:</h1>
+    <script>
+        let cate,hijos,bono,bonop,profesor,sueldob,sueldon;
+        cate=prompt("Elegir categoria:");
+        hijos=prompt("Ingrese numero de hijos");
+        profesor=prompt("Tipo de profesor");
+        if(hijos<=3){bono=25*hijos;}
+        if(hijos>3){bono=(25*3)+(10*(hijos-3));}
+        if(cate="A"){sueldob=2350+bono;}
+        if(cate="B"){sueldob=2000+bono;}
+        if(cate="C"){sueldob=1850+bono;}
+        if(cate="D"){sueldob=1500+bono;}
+        if(profesor="contratado"){bonop=sueldob*0.1;}
+        if(profesor="nombrado"){bonop=sueldob*0.15;}
+        sueldon=sueldob+bonop;
+        document.write("Bonificacion por hijos:"+bono);
+        document.write("<br>Bonificacion por condicion laboral:"+bonop);
+        document.write("<br>Bonificación total:"+sueldon);
+    </script>
+</body>
+</html>

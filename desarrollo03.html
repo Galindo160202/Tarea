@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo 03</title>
+</head>
+<body>
+    <h1>Ejercicio 03:</h1>
+    <script>
+        let hijos,bono,importe,comision,sueldob,sueldon,descuento;
+        hijos=prompt("Ingrese numero de hijos:");
+        importe=prompt("Ingrese importe vendido")
+        bono=hijos*50;
+        comision=importe*0.075;
+        sueldob=600+bono+comision;
+        descuento=sueldob*0.11;
+        sueldon=sueldob-descuento;
+        document.write("Comision:"+ comision);
+        document.write("<br>Bono:"+ bono);
+        document.write("<br>Sueldo burto:"+sueldob);
+        document.write("<br>Descuento:"+descuento);
+        document.write("<br>Sueldo neto:"+ sueldon);
+    </script>
+</body>
+</html>
